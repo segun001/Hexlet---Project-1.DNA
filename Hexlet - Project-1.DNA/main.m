@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Cell.h"
 
 int main(int argc, const char * argv[])
 {
@@ -15,6 +16,11 @@ int main(int argc, const char * argv[])
         
         // insert code here...
         NSLog(@"Hello, World!");
+        
+        Cell *cell_1 = [[Cell alloc] init];
+        Cell *cell_2 = [[Cell alloc] init];
+        
+        NSLog(@"Distance: %i", [cell_1 hammingDistance:cell_2]);
         
     }
     return 0;
